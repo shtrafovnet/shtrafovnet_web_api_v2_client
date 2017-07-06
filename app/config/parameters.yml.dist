@@ -1,0 +1,5 @@
+host: https://api.shtrafovnet.ru/v2/webmasters
+account:
+  login: user@example.com
+  password: ~
+token: ~

@@ -1,0 +1,15 @@
+{
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  },
+  "extra": {
+    "incenteev-parameters": {
+      "file": "app/config/parameters.yml"
+    }
+  },
+  "require": {
+    "symfony/yaml": "^3.3"
+  }
+}
