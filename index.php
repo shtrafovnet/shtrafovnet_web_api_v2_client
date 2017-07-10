@@ -50,6 +50,11 @@ try {
      *          2952400,
      *      ],
      * ]);
+     *
+     *     list($headers, $body) = $apiClient->getCarFines(1003747, [
+     *         'paid'    => 'nopaid',
+     *         'filters' => ['discount'],
+     *     ]);
      */
 
     displayResponse($headers, $body);

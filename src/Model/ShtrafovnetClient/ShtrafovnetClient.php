@@ -462,6 +462,25 @@ class ShtrafovnetClient
     }
 
     /**
+     * Получение штрафов транспортного средства
+     * GET /cars/{id}/fines
+     */
+    public function getCarFines($id, $queryParams = [])
+    {
+        $url = $this->getApiBaseUrl()."/cars/".$id."/fines";
+
+        if (!empty($queryParams)) {
+            $url .= "?".http_build_query($queryParams);
+        }
+
+        $headers = [
+            $this->getBearerAuthHeader(),
+        ];
+
+        return $this->sendGetRequest($url, [], $headers);
+    }
+
+    /**
      * ===============================================================
      * FINES's
      * ===============================================================
